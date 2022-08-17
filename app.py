@@ -30,10 +30,8 @@ session = Session(engine)
 app = Flask(__name__)
 
 # 9.5.2: Create the Welcome Route
-
 #  Flask Routes
 @app.route('/')
-
 def welcome():
     return(
     '''
@@ -44,5 +42,17 @@ def welcome():
     /api/v1.0/tobs
     /api/v1.0/temp/start/end
     ''')
+
+# 9.5.3: Precipitation Route
+#  Precipitation Route
+@app.route("/api/v1.0/precipitation")
+def precipitation():
+    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    precipitation = session.query(Measurement.date, Measurement.prcp).\
+        filter(Measurement.date >= prev_year).all()
+    precip = {date: prcp for date, prcp in precipitation}
+    
+    return jsonify(precip)
+
 
 
