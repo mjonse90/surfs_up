@@ -11,3 +11,16 @@ Summary of June temperatures
 Summary of December temperatures
 
 <img width="254" alt="Screen Shot 2022-08-17 at 3 20 05 PM" src="https://user-images.githubusercontent.com/103767830/185236620-4d0a1d78-2327-407a-b3fd-79171b61e2d0.png">
+
+Main takeaways: 
+- We have one less year of data for December (2010-2016) than we do for June (2010-2017).
+- June has an average low of 64F while December has an average low of 56F.
+- December has a standard deviation of 3.76 while June has a standard deviation of 3.26. 
+
+## Summary
+In conclusion, Oahu is a tropical paradise with little temperature changes throughout the year. The average December temperature is 71F, which is significantly warmer to a lot of people who would likely be vacationing in Oahu from colder climates. Surfing rentals and sales should not be impacted much by these temperatures. However, ice cream sales may drop slightly during this time.
+
+Additional information from further queries:
+
+(1) Precipitation amounts data during the same years since rain will likely impact surfing sales.
+(2) Find out where rain falls the most on the island and try and stay clear from those areas.
