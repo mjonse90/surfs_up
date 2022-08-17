@@ -28,3 +28,21 @@ session = Session(engine)
 
 # Set up Flask
 app = Flask(__name__)
+
+# 9.5.2: Create the Welcome Route
+
+#  Flask Routes
+@app.route('/')
+
+def welcome():
+    return(
+    '''
+    Welcome to the Climate Analysis API!
+    Available Routes:
+    /api/v1.0/precipitation
+    /api/v1.0/stations
+    /api/v1.0/tobs
+    /api/v1.0/temp/start/end
+    ''')
+
+
